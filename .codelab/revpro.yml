@@ -55,6 +55,8 @@
     :tests:
       basicsTest1: 1
       basicsTest2: 1
+      combineTest1: 1
+      combineTest2: 1
   HelloWorld:
     :Week: 1
     :Order: 2

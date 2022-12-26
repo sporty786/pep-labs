@@ -1,3 +1,4 @@
+import java.io.StringWriter;
 
 public class InstantiationExample {
     /**
@@ -18,6 +19,7 @@ public class InstantiationExample {
      * @return any object.
      */
     public Object instantiateANewObject(){
-        return null;
+        Object javaLearner = new Object();
+        return javaLearner;
     }
 }

@@ -16,6 +16,11 @@ public class ExceptionChallenge {
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
      */
-    public void mustThrow(){
+    public void mustThrow() throws Exception{
+        throw new Exception("Oh no! There was an error!");
+        // int[] list = new int[0];
+        // System.out.println(list[3]);
+        // String test = "";
+        // test.toString();
     }
 }

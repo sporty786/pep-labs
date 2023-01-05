@@ -1,4 +1,6 @@
 import java.util.Deque;
+import java.util.ArrayDeque;
+
 /**
  * Stacks are LIFO - last in, first out, like a stack of plates or books, or the puzzle game "Towers of Hanoi".
  * They are used in algorithms where it is needed to keep track of the ordering in which the elements were inserted.
@@ -20,7 +22,8 @@ public class StackExercise {
      * @return a newly instantiated Deque. Deques implement both stack and queue behavior.
      */
     public Deque<String> createNewStack(){
-        return null;
+        ArrayDeque<String> stack = new ArrayDeque<Stack>();
+        return stack;
     }
 
     /**

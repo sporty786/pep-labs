@@ -23,7 +23,6 @@ public class Average {
             sum += nums[i];
         }
         sum /= nums.length;
-        System.out.println(sum);
         return sum;
     }
 }

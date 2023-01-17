@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
   Start:
     :Week: 1
     :Order: 1
@@ -539,10 +539,10 @@
     :Order: 11
     :Type: lab
     :count_tests: 3
-    :count_tests_passed: 0
+    :count_tests_passed: 1
     :tests:
       testActivityFindEmployeesAnd: 0
-      testActivityFindEmployeesOr: 0
+      testActivityFindEmployeesOr: 1
       testActivityFindEmployeesNotIn: 0
   OrderBy:
     :Week: 4

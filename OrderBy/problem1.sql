@@ -1,0 +1,1 @@
+SELECT * FROM character ORDERBY last_name, first_name;

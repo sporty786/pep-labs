@@ -40,12 +40,12 @@
     :git_user_name: sporty786
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 2
+  :count_tests_passed: 4
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 2
+  :count_tests_passed: 4
   Start:
     :Week: 1
     :Order: 1
@@ -557,12 +557,12 @@
     :Order: 13
     :Type: challenge
     :count_tests: 4
-    :count_tests_passed: 2
+    :count_tests_passed: 4
     :tests:
       containsTest1: 1
-      containTest2: 0
+      containTest2: 1
       containTest3: 1
-      containTest4: 0
+      containTest4: 1
   DoesNotContain:
     :Week: 4
     :Order: 14

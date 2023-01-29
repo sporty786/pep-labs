@@ -1,1 +1,1 @@
-SELECT COUNT(*) FROM employee WHERE last_name = "Smith";
+SELECT COUNT(*) FROM employee WHERE last_name = 'Smith';

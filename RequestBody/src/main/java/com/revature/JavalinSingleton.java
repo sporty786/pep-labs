@@ -1,5 +1,6 @@
 package com.revature;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.Javalin;
 
 /**
@@ -18,6 +19,13 @@ public class JavalinSingleton {
          */
         app.post("/problem1", ctx -> {
                 //implement logic here
+                // convert body of request to json string
+               String jsonString = ctx.body();
+               // use jackson to convert to song object
+               ObjectMapper om = new ObjectMapper();
+               Song song = om.readValue(jsonString, Song.class);
+               // return artist name in body
+               ctx.result(song.getArtistName());
         });
 
         /**
@@ -29,6 +37,19 @@ public class JavalinSingleton {
          */
         app.post("/problem2", ctx -> {
                //implement logic here
+               // convert body of request to json string
+               String jsonString = ctx.body();
+               // use jackson to convert to song object
+               ObjectMapper om = new ObjectMapper();
+               Song song = om.readValue(jsonString, Song.class);
+               // let request know we will send back json in the body
+               ctx.contentType("application/json");
+               // change the artist
+               song.setArtistName("Beatles");
+               // use jackson to convert back to json object to be returned
+                String jsonStringToBeReturned = om.writeValueAsString(song);
+               //return json object of song with updated artist
+               ctx.result(jsonStringToBeReturned);
         });
 
 

@@ -33,7 +33,7 @@ public class FlightDAO {
         List<Flight> flights = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "change me";
+            String sql = "SELECT * FROM flight";
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             ResultSet rs = preparedStatement.executeQuery();

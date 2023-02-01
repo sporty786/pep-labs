@@ -30,7 +30,7 @@ public class Pyramid {
         String pyramid = "";
         String star = "*";
         for (int i = 0; i < n; i++){
-            for (int l = 0; l < i; l++){pyramid += star;}
+            for (int l = 0; l < i + 1; l++){pyramid += star;}
             pyramid += "\n";
         }
         return pyramid;

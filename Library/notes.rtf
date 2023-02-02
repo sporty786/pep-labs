@@ -1,0 +1,15 @@
+Author Table set up
+
+create table author(" +
+                    "id int primary key auto_increment, " +
+                    "name varchar(255)); 
+
+
+Book Table Setup
+
+"create table book(" +
+                    "isbn int primary key, " +
+                    "author_id int, "+
+                    "title varchar(255), " +
+                    "copies_available varchar(255), " +
+                    "foreign key (author_id) references author(id));"

@@ -14,9 +14,10 @@ public class OtherStringMethods {
      * @return
      */
     public String partOfString(String s, int start, int end){
-        String part = "";
-        for (int i = start; i < end; i++){part += s.charAt(i);}
-        return part;
+        return s.substring(start, end);
+        // String part = "";
+        // for (int i = start; i < end; i++){part += s.charAt(i);}
+        // return part;
     }
 
     // public static void main(String[] args){
@@ -53,25 +54,26 @@ public class OtherStringMethods {
      * and 0 if s1 is equivalent to s2.
      */
     public int compareLexigraphically(String s1, String s2){
-        if (s1.equals(s2)){return 0;}
-        String dict = "0123456789abcdefghijklmnopqrstuvwxyz";
-        boolean s1letter;
-        boolean s2letter;
-        int shortest;
-        if (s1.length() >= s2.length()){shortest = s1.length();}
-        else {shortest = s2.length();}
-        for (int i = 0; i < shortest; i ++){
-            s1letter = false;
-            s2letter = false;
-            for (int n = 0; n < dict.length(); n++){
-                if ((dict.charAt(n)) == (s1.charAt(i))){s1letter = true;}
-                if ((dict.charAt(n)) == (s2.charAt(i))){s2letter = true;}
-                if (s1letter && !s2letter){return 1;}
-                else if (s2letter && !s1letter){return -1;}
-                else if (s1letter && s2letter){break;}
-            }
-        }
-        return 0;
+        return s1.compareTo(s2);
+        // if (s1.equals(s2)){return 0;}
+        // String dict = "0123456789abcdefghijklmnopqrstuvwxyz";
+        // boolean s1letter;
+        // boolean s2letter;
+        // int shortest;
+        // if (s1.length() >= s2.length()){shortest = s1.length();}
+        // else {shortest = s2.length();}
+        // for (int i = 0; i < shortest; i ++){
+        //     s1letter = false;
+        //     s2letter = false;
+        //     for (int n = 0; n < dict.length(); n++){
+        //         if ((dict.charAt(n)) == (s1.charAt(i))){s1letter = true;}
+        //         if ((dict.charAt(n)) == (s2.charAt(i))){s2letter = true;}
+        //         if (s1letter && !s2letter){return 1;}
+        //         else if (s2letter && !s1letter){return -1;}
+        //         else if (s1letter && s2letter){break;}
+        //     }
+        // }
+        // return 0;
     }
 
     /**
@@ -106,5 +108,5 @@ public class OtherStringMethods {
     //     }
     //     for (int i = 0; i < fin.length; i++){System.out.println(fin[i]);}
     //     return fin;
-    // }
+    }
 }

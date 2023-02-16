@@ -79,11 +79,13 @@ public class OtherStringMethods {
                 word = word.substring(0, word.length() - splitAround.length() - 1);
                 split.add(word);
                 word = "";
+                x = 0;
             }
-
-            // word.length - splitAround.length - 1
-
         }
-        return null;
+        String[] fin = new String[split.size()];
+        for (int i = 0; i < split.size(); i++){
+            fin[i] = split.get(i);
+        }
+        return fin;
     }
 }

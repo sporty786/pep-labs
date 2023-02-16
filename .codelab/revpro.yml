@@ -40,12 +40,12 @@
     :git_user_name: sporty786
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 5
+  :count_tests_passed: 7
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 5
+  :count_tests_passed: 7
   Start:
     :Week: 1
     :Order: 1
@@ -855,12 +855,12 @@
     :Order: 2
     :Type: lab
     :count_tests: 7
-    :count_tests_passed: 5
+    :count_tests_passed: 7
     :tests:
       partOfStringTest1: 1
       partOfStringTest2: 1
-      compareToTest1: 0
-      compareToTest2: 0
+      compareToTest1: 1
+      compareToTest2: 1
       compareToTest3: 1
       splitStringTest1: 1
       splitStringTest2: 1

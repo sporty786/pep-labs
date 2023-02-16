@@ -11,7 +11,9 @@ public class OtherStringMethods {
      * @return
      */
     public String partOfString(String s, int start, int end){
-        return "";
+        char[] part = new char[end - start];
+        for (int i = start; i < end; i++){part[i - start] = s.charAt(i);}
+        return part.toString();
     }
 
     /**

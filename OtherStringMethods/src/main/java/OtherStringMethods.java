@@ -19,12 +19,6 @@ public class OtherStringMethods {
         return part;
     }
 
-    // public static void main(String[] args){
-    //     String check = "Hello how are you today?";
-    //     OtherStringMethods osm = new OtherStringMethods();
-    //     System.out.println(osm.partOfString(check, 0, 3));
-    // }
-
     /**
      * All classes have methods equals and toString because they inherit them from the Object class by extending the
      * Object class - how do we mandate that a class exhibits certain behaviors apart from those provided by the

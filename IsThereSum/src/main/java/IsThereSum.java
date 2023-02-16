@@ -10,6 +10,11 @@ public class IsThereSum {
      * @return true if two separate values in the array add up to a target, false otherwise.
      */
     public boolean check(int[] arr, int target){
+        for (int i = 0; i < arr.length; i++){
+            for (int n = i; n< arr.length; n++){
+                if ((arr[i] + arr[n]) == target){return true;}
+            }
+        }
         return false;
     }
 }

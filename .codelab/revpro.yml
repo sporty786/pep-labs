@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 4
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 4
   Start:
     :Week: 1
     :Order: 1
@@ -855,14 +855,14 @@
     :Order: 2
     :Type: lab
     :count_tests: 7
-    :count_tests_passed: 0
+    :count_tests_passed: 4
     :tests:
-      partOfStringTest1: 0
-      partOfStringTest2: 0
+      partOfStringTest1: 1
+      partOfStringTest2: 1
       compareToTest1: 0
       compareToTest2: 0
-      compareToTest3: 0
-      splitStringTest1: 0
+      compareToTest3: 1
+      splitStringTest1: 1
       splitStringTest2: 0
   RemoveAllCharacter:
     :Week: 7

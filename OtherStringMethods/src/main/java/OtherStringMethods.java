@@ -19,6 +19,28 @@ public class OtherStringMethods {
         return part;
     }
 
+    // public static void main(String[] args){
+    //     String test = "Hello we test String methods.";
+    //     OtherStringMethods osm = new OtherStringMethods();
+    //     System.out.println(osm.partOfString(test, 0, 5));
+    //     System.out.println("Hello");
+    //     System.out.println(osm.partOfString(test, 6, 8));
+    //     System.out.println("we");
+    //     System.out.println(osm.compareLexigraphically("abc","xyz"));
+    //     System.out.println("1");
+    //     System.out.println(osm.compareLexigraphically("always","about"));
+    //     System.out.println("-1");
+    //     System.out.println(osm.compareLexigraphically("test", "test"));
+    //     System.out.println("0");
+    //     String[] split = osm.splitStringIntoMultipleStrings(test, " ");
+    //     System.out.print("[");
+    //     for (int i = 0; i < split.length; i++){
+    //         System.out.print(split[i] + ", ");
+    //     }
+    //     System.out.print("]\n[Hello, we, test, String, methods.]\n");
+    //     System.out.println(split.length);
+    // }
+
     /**
      * All classes have methods equals and toString because they inherit them from the Object class by extending the
      * Object class - how do we mandate that a class exhibits certain behaviors apart from those provided by the
@@ -70,12 +92,13 @@ public class OtherStringMethods {
             word += letter;
             if (letter == splitAround.charAt(x)){x++;}
             if (x == splitAround.length()){
-                word = word.substring(0, word.length() - splitAround.length() - 1);
+                word = word.substring(0, word.length() - splitAround.length());
                 split.add(word);
                 word = "";
                 x = 0;
             }
         }
+        if (!word.isBlank()){split.add(word);}
         String[] fin = new String[split.size()];
         for (int i = 0; i < split.size(); i++){
             fin[i] = split.get(i);

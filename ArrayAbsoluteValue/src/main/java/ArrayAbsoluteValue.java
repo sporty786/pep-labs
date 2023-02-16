@@ -1,3 +1,5 @@
+import java.util.List;
+import java.util.ArrayList;
 
 public class ArrayAbsoluteValue {
     /**
@@ -9,6 +11,20 @@ public class ArrayAbsoluteValue {
      * @return the absolute value array of nums.
      */
     public int[] getArrayAbs(int[] nums){
-        return null;
+        List<Integer> absValues = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++){
+            boolean exists = false;
+            int x = Math.abs(nums[i]);
+            for (int n = 0; n < absValues.size(); n++){
+                if (x == absValues.get(n)){
+                    exists = true;
+                    break;
+                }
+                if (!exists){absValues.add(x);}
+            }
+        }
+        int[] arrayList = new int[absValues.size()];
+        for (int i = 0; i < arrayList.length; i++){arrayList[i] = absValues.get(i);}
+        return arrayList;
     }
 }

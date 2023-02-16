@@ -20,25 +20,25 @@ public class OtherStringMethods {
     }
 
     // public static void main(String[] args){
-    //     String test = "Hello we test String methods.";
-    //     OtherStringMethods osm = new OtherStringMethods();
-    //     System.out.println(osm.partOfString(test, 0, 5));
-    //     System.out.println("Hello");
-    //     System.out.println(osm.partOfString(test, 6, 8));
-    //     System.out.println("we");
-    //     System.out.println(osm.compareLexigraphically("abc","xyz"));
-    //     System.out.println("1");
-    //     System.out.println(osm.compareLexigraphically("always","about"));
-    //     System.out.println("-1");
-    //     System.out.println(osm.compareLexigraphically("test", "test"));
-    //     System.out.println("0");
-    //     String[] split = osm.splitStringIntoMultipleStrings(test, " ");
-    //     System.out.print("[");
-    //     for (int i = 0; i < split.length; i++){
-    //         System.out.print(split[i] + ", ");
-    //     }
-    //     System.out.print("]\n[Hello, we, test, String, methods.]\n");
-    //     System.out.println(split.length);
+        // String test = "Hello we test String methods.";
+        // OtherStringMethods osm = new OtherStringMethods();
+        // System.out.println(osm.partOfString(test, 0, 5));
+        // System.out.println("Hello");
+        // System.out.println(osm.partOfString(test, 6, 8));
+        // System.out.println("we");
+        // System.out.println(osm.compareLexigraphically("abc","xyz"));
+        // System.out.println("1");
+        // System.out.println(osm.compareLexigraphically("always","about"));
+        // System.out.println("-1");
+        // System.out.println(osm.compareLexigraphically("test", "test"));
+        // System.out.println("0");
+        // String[] split = osm.splitStringIntoMultipleStrings("src.main.java", "\\.");
+        // System.out.print("[");
+        // for (int i = 0; i < split.length; i++){
+        //     System.out.print(split[i] + ", ");
+        // }
+        // System.out.print("]\n[Hello, we, test, String, methods.]\n");
+        // System.out.println(split.length);
     // }
 
     /**
@@ -84,25 +84,27 @@ public class OtherStringMethods {
      * @return an array of Strings that represent s1 split by splitAround.
      */
     public String[] splitStringIntoMultipleStrings(String s1, String splitAround){
-        ArrayList<String> split = new ArrayList<>();
-        String word = "";
-        int x = 0;
-        for (int i = 0; i < s1.length(); i++){
-            char letter = s1.charAt(i);
-            word += letter;
-            if (letter == splitAround.charAt(x)){x++;}
-            if (x == splitAround.length()){
-                word = word.substring(0, word.length() - splitAround.length());
-                split.add(word);
-                word = "";
-                x = 0;
-            }
-        }
-        if (!word.isBlank()){split.add(word);}
-        String[] fin = new String[split.size()];
-        for (int i = 0; i < split.size(); i++){
-            fin[i] = split.get(i);
-        }
-        return fin;
-    }
+        return s1.split(splitAround);
+    //     ArrayList<String> split = new ArrayList<>();
+    //     String word = "";
+    //     int x = 0;
+    //     for (int i = 0; i < s1.length(); i++){
+    //         char letter = s1.charAt(i);
+    //         word += letter;
+    //         if (letter == splitAround.charAt(x)){x++;}
+    //         if (x == splitAround.length()){
+    //             word = word.substring(0, word.length() - splitAround.length());
+    //             split.add(word);
+    //             word = "";
+    //             x = 0;
+    //         }
+    //     }
+    //     if (!word.isBlank()){split.add(word);}
+    //     String[] fin = new String[split.size()];
+    //     for (int i = 0; i < split.size(); i++){
+    //         fin[i] = split.get(i);
+    //     }
+    //     for (int i = 0; i < fin.length; i++){System.out.println(fin[i]);}
+    //     return fin;
+    // }
 }

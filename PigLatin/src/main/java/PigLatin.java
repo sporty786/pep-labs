@@ -17,6 +17,12 @@ public class PigLatin {
      * @return the pig latin form of in.
      */
     public String returnPigLatin(String in){
-        return "";
+        String vowels = "aeiou";
+        for (int n = 0; n < in.length(); n++){
+            for (int i = 0; i < vowels.length(); i++){
+                if (in.charAt(n) == vowels.charAt(i)){return in.substring(n, in.length()) + in.substring(0, n) + "ay";}
+            }
+        }
+        return in.substring(1, in.length()) + in.charAt(0) + "ay";
     }
 }

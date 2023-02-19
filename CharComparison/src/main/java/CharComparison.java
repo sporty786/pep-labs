@@ -14,7 +14,8 @@ public class CharComparison {
         for (int i = 0; i < a.length; i++){
             if (i > b.length){return 1;}
             int comp = Character.compare(a[i],b[i]);
-            if (comp != 0){return comp;}
+            if (comp > 0){return 1;}
+            else if (comp < 0){return -1;}
         }
         return 0;
     }

@@ -40,12 +40,12 @@
     :git_user_name: sporty786
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 4
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 4
   Start:
     :Week: 1
     :Order: 1
@@ -900,12 +900,12 @@
     :Order: 6
     :Type: challenge
     :count_tests: 4
-    :count_tests_passed: 0
+    :count_tests_passed: 4
     :tests:
-      abvTest1: 0
-      abvTest2: 0
-      abvTest3: 0
-      abvTest4: 0
+      abvTest1: 1
+      abvTest2: 1
+      abvTest3: 1
+      abvTest4: 1
   ParentObjectClassMethods:
     :Week: 8
     :Order: 1

@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 8
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 8
   Start:
     :Week: 1
     :Order: 1
@@ -911,17 +911,17 @@
     :Order: 1
     :Type: lab
     :count_tests: 9
-    :count_tests_passed: 0
+    :count_tests_passed: 8
     :tests:
-      implementEqualsMethodTest1: 0
-      implementEqualsMethodTest2: 0
-      implementEqualsMethodTest3: 0
-      implementEqualsMethodTest4: 0
-      implementEqualsMethodTest5: 0
-      toStringTest1: 0
+      implementEqualsMethodTest1: 1
+      implementEqualsMethodTest2: 1
+      implementEqualsMethodTest3: 1
+      implementEqualsMethodTest4: 1
+      implementEqualsMethodTest5: 1
+      toStringTest1: 1
       toStringTest2: 0
-      toStringTest3: 0
-      toStringTest4: 0
+      toStringTest3: 1
+      toStringTest4: 1
   Overriding:
     :Week: 8
     :Order: 2

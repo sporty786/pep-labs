@@ -17,6 +17,7 @@ public class CharComparison {
             if (comp > 0){return 1;}
             else if (comp < 0){return -1;}
         }
+        if (b.length > a.length){return -1;}
         return 0;
     }
 }

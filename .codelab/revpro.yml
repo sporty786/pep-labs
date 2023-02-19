@@ -919,8 +919,8 @@
       implementEqualsMethodTest4: 1
       implementEqualsMethodTest5: 1
       toStringTest1: 1
-      toStringTest2: 0
-      toStringTest3: 1
+      toStringTest2: 1
+      toStringTest3: 0
       toStringTest4: 1
   Overriding:
     :Week: 8

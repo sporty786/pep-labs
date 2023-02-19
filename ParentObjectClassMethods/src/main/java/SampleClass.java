@@ -63,7 +63,7 @@ public class SampleClass {
 
     //    implement a custom .toString(){} method here.
     public String toString(){
-        return super.toString() + "\na: " + a +"\nb: "+ b;
+        return "\na: " + a +"\nb: "+ b;
     }
 
     

@@ -40,12 +40,12 @@
     :git_user_name: sporty786
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 8
+  :count_tests_passed: 9
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 8
+  :count_tests_passed: 9
   Start:
     :Week: 1
     :Order: 1
@@ -911,7 +911,7 @@
     :Order: 1
     :Type: lab
     :count_tests: 9
-    :count_tests_passed: 8
+    :count_tests_passed: 9
     :tests:
       implementEqualsMethodTest1: 1
       implementEqualsMethodTest2: 1
@@ -920,7 +920,7 @@
       implementEqualsMethodTest5: 1
       toStringTest1: 1
       toStringTest2: 1
-      toStringTest3: 0
+      toStringTest3: 1
       toStringTest4: 1
   Overriding:
     :Week: 8

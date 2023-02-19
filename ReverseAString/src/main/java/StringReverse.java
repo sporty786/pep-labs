@@ -17,6 +17,6 @@ public class StringReverse {
         for (int i = 0; i < rev.length; i++){
             rev[i] = str.charAt(rev.length - i - 1);
         }
-        return rev.toString();
+        return String.valueOf(rev);
     }
 }

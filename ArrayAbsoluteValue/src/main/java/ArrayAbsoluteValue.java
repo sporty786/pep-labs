@@ -11,20 +11,26 @@ public class ArrayAbsoluteValue {
      * @return the absolute value array of nums.
      */
     public int[] getArrayAbs(int[] nums){
-        List<Integer> absValues = new ArrayList<>();
+        int[] absVal = new int[nums.length];
         for (int i = 0; i < nums.length; i++){
-            boolean exists = false;
-            int x = Math.abs(nums[i]);
-            for (int n = 0; n < absValues.size(); n++){
-                if (x == absValues.get(n)){
-                    exists = true;
-                    break;
-                }
-                if (!exists){absValues.add(x);}
-            }
+            if (nums[i] < 0){absVal[i] = 0 - nums[i];}
+            else{absVal[i] = nums[i];}
         }
-        int[] arrayList = new int[absValues.size()];
-        for (int i = 0; i < arrayList.length; i++){arrayList[i] = absValues.get(i);}
-        return arrayList;
+        return absVal;
+        // List<Integer> absValues = new ArrayList<>();
+        // for (int i = 0; i < nums.length; i++){
+        //     boolean exists = false;
+        //     int x = Math.abs(nums[i]);
+        //     for (int n = 0; n < absValues.size(); n++){
+        //         if (x == absValues.get(n)){
+        //             exists = true;
+        //             break;
+        //         }
+        //         if (!exists){absValues.add(x);}
+        //     }
+        // }
+        // int[] arrayList = new int[absValues.size()];
+        // for (int i = 0; i < arrayList.length; i++){arrayList[i] = absValues.get(i);}
+        // return arrayList;
     }
 }

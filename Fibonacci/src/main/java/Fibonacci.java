@@ -14,9 +14,14 @@ public class Fibonacci {
      * @param n an iteration of the fibonacci sequence.
      * @return the nth number of fibonacci sequence.
      */
-    public int fib(int n){
-        if (n == 1){return 0;}
-        if (n == 2) {return 1;}
+    public static int fib(int n){
+        if (n <= 1){return 0;}
+        else if (n == 1) {return 1;}
         return fib(n - 2) + fib(n - 1);
+    }
+
+    public static void main(String[] args){
+        int fibby = fib(8);
+        System.out.println(fibby);
     }
 }

@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 2
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 2
   Start:
     :Week: 1
     :Order: 1
@@ -1024,14 +1024,14 @@
     :Order: 3
     :Type: challenge
     :count_tests: 6
-    :count_tests_passed: 0
+    :count_tests_passed: 2
     :tests:
       mostCommonCharacterTest1: 0
       mostCommonCharacterTest2: 0
       mostCommonCharacterTest3: 0
       mostCommonCharacterTest4: 0
-      mostCommonCharacterTest5: 0
-      mostCommonCharacterTest6: 0
+      mostCommonCharacterTest5: 1
+      mostCommonCharacterTest6: 1
   Fibonacci:
     :Week: 9
     :Order: 4

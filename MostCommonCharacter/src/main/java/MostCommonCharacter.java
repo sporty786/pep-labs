@@ -10,7 +10,8 @@ public class MostCommonCharacter {
      * @return the most common character within str.
      */
     public char recurringChar(String str) {
-        Map<Character><Integer> charFreq = new HashMap<><>();
+        
+        HashMap<Character><Integer> charFreq = new HashMap();
         return charFreq;
         return ' ';
     }

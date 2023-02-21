@@ -14,7 +14,7 @@ public class MostCommonCharacter {
         String chars = "";
         for (int i = 0; i < str.length(); i++){
             char letter = str.charAt(i);
-            if (charFreq.get(letter) != null){charFreq.put(letter, charFreq.get(letter));}
+            if (charFreq.get(letter) != null){charFreq.put(letter, charFreq.get(letter) + 1);}
             else {
                 charFreq.put(letter, 1);
                 chars += letter;
@@ -27,6 +27,7 @@ public class MostCommonCharacter {
         biggest = charFreq.get(recur);
         for (int i = 1; i < chars.length(); i++){
             int freq = charFreq.get(chars.charAt(i));
+            System.out.println(freq+" "+chars.charAt(i));
             if (freq > biggest){
                 biggest = freq;
                 recur = chars.charAt(i);
@@ -34,4 +35,11 @@ public class MostCommonCharacter {
         }
         return recur;
     }
+
+    public static void main(String[] args){
+        MostCommonCharacter test = new MostCommonCharacter();
+        System.out.println(test.recurringChar("3585922463" + "4564881449" + "9744344742" + "8950706750" + "7316600461" + "9728760400" + "7599995873" + "0552858863" + "6107666584" + "8137602552"));
+    }
+    
+
 }

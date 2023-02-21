@@ -35,11 +35,4 @@ public class MostCommonCharacter {
         }
         return recur;
     }
-
-    public static void main(String[] args){
-        MostCommonCharacter test = new MostCommonCharacter();
-        System.out.println(test.recurringChar("3585922463" + "4564881449" + "9744344742" + "8950706750" + "7316600461" + "9728760400" + "7599995873" + "0552858863" + "6107666584" + "8137602552"));
-    }
-    
-
 }
